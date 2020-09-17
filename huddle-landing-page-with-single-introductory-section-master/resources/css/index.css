@@ -1,0 +1,51 @@
+*{
+	color:white;
+}
+
+body{
+	background-image: url("../images/bg-mobile.svg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: hsl(257, 40%, 49%);
+}
+main{
+	width: 75%;
+	margin: 0 auto;
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+main h1{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 110%;
+	line-height: 1.5;
+}
+main p{
+	text-align: center;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	color:  hsl(258, 100%, 90%);
+	font-size: 90%;
+	line-height: 1.5;
+}
+main button {
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:hsl(257, 40%, 49%);
+	font-family: 'Open Sans';
+	font-size:110%;
+	text-decoration:none;
+	text-align: center;
+	position: relative;
+	width: 200px;
+	height: 30px;
+	align-items: center;
+}
