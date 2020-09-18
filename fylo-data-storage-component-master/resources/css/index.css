@@ -1,3 +1,55 @@
+
+/*
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%)
+*/
 *{
-    color: red;
+    font-family: 'Raleway', sans-serif;
+    color: hsl(243, 100%, 93%)
+}
+
+body{
+    background-image: url("../images/bg-mobile.png");
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-wrapper, .data-wrapper{
+    background-color: hsl(228, 56%, 26%);
+    margin: 20px auto;
+    padding: 20%;
+}
+
+.logo-wrapper{
+
+    
+}
+
+.action-wrapper{
+    background-color: hsl(229, 57%, 11%);
+    padding: 5px;
+}
+
+.data-left{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.data-left .amount{
+    font-weight: 700;
+    font-size: 200%;
+    color: hsl(229, 57%, 11%);
+}
+
+.data-left .text{
+    color:  hsl(229, 7%, 55%);
+    font-size: 90%;
 }
