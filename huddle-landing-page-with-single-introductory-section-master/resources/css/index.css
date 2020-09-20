@@ -2,16 +2,20 @@
 	color:white;
 }
 
+div{
+	border: solid red 3px;
+}
+
 body{
+	display: relative;
+	width: 75%;
+	margin: 0 auto;
+
 	background-image: url("../images/bg-mobile.svg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: hsl(257, 40%, 49%);
-}
-main{
-	width: 75%;
-	margin: 0 auto;
 }
 img{
 	display: block;
@@ -20,32 +24,55 @@ img{
 	width: 100%;
 }
 
+main{
+	text-align: center; /* will center a button that is its child - cant believe it was that easy*/
+}
+
 main h1{
-	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	font-size: 110%;
 	line-height: 1.5;
 }
 main p{
-	text-align: center;
 	font-family: 'Open Sans';
 	font-weight: 400;
 	color:  hsl(258, 100%, 90%);
 	font-size: 90%;
 	line-height: 1.5;
 }
-main button {
-	border-radius:28px;
-	display:inline-block;
-	cursor:pointer;
-	color:hsl(257, 40%, 49%);
-	font-family: 'Open Sans';
-	font-size:110%;
-	text-decoration:none;
+.register {
+	border-radius: 20px;
+	height: 15px;
+	line-height: 7.5px; /* line-height half the height!*/
+	color: hsl(257, 40%, 49%);
+	font-family: Open Sans;
+	width: 219px;
+	font-size: 15px;
+	font-weight: 100;
+	padding: 15px;
+	background-color: #FFFFFF;
+	cursor: pointer;
 	text-align: center;
-	position: relative;
-	width: 200px;
-	height: 30px;
-	align-items: center;
+	}
+
+.socials embed{
+	width: 13px;
+	height: 13px;
+	padding: 5px;
+	border: white solid 1px;
+	border-radius: 100%;
+	color: white;
+}
+
+.socials{
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+	margin: 0 auto;
+}
+
+footer{
+	font-size: 50%;
+	text-align: center;
 }
