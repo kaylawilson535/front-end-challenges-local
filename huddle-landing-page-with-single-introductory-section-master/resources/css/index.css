@@ -1,20 +1,25 @@
+/*At the very end, i went to resize it and while the widt is perfectly responsive, the height is not at all. After some contemplation, I think the only solution to this would be to deal with flex. I can picture if the outer most div fills the height of the screen then all is well.*/
+
+/******* Mobile-First Design ********/
+
+/******* Tags ********/
 *{
-	color:white;
+	color: hsl(258, 100%, 90%);
 }
 
-div{
-	border: solid red 3px;
+html, body{
+	height: 100%;
 }
 
 body{
 	display: relative;
-	width: 75%;
+	width: 80%;
 	margin: 0 auto;
 
 	background-image: url("../images/bg-mobile.svg");
-	background-position: center;
-	background-size: cover;
+	background-position: top;
 	background-repeat: no-repeat;
+	background-size: auto;
 	background-color: hsl(257, 40%, 49%);
 }
 img{
@@ -24,37 +29,63 @@ img{
 	width: 100%;
 }
 
+/******* Logo ********/
+
+.logo embed{
+	width: 120px;
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+
+/******* Main Section ********/
+
 main{
-	text-align: center; /* will center a button that is its child - cant believe it was that easy*/
+	text-align: center; 
+	/* this will center a button that as its child - cant believe it was that easy*/
+}
+
+main h1, main p, main div, main button {
+	margin-top: 10%;
+}
+
+main img{
+	margin: 10% auto 20%;
 }
 
 main h1{
 	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 110%;
+	font-weight: 500;
+	color: white;
+	font-size: 150%;
 	line-height: 1.5;
 }
 main p{
 	font-family: 'Open Sans';
 	font-weight: 400;
 	color:  hsl(258, 100%, 90%);
-	font-size: 90%;
-	line-height: 1.5;
+	font-size: 100%;
+	line-height: 1.45;
+	margin-top: 5%;
 }
+
 .register {
-	border-radius: 20px;
-	height: 15px;
-	line-height: 7.5px; /* line-height half the height!*/
+	border-radius: 30px;
+	height: 20px;
+	line-height: 1px;
 	color: hsl(257, 40%, 49%);
 	font-family: Open Sans;
 	width: 219px;
 	font-size: 15px;
 	font-weight: 100;
-	padding: 15px;
+	padding: 20px;
 	background-color: #FFFFFF;
 	cursor: pointer;
 	text-align: center;
+	border-style: none;
+	box-shadow: 3px 3px 10px hsl(257, 54%, 38%);
 	}
+
+/******* Socials ********/
 
 .socials embed{
 	width: 13px;
@@ -69,10 +100,123 @@ main p{
 	display: flex;
 	justify-content: space-between;
 	width: 100px;
-	margin: 0 auto;
+	margin: 25% auto 5%;
 }
+
+/******* Footer ********/
 
 footer{
 	font-size: 50%;
 	text-align: center;
 }
+@media only screen and (min-width: 300px) {
+	body{
+		background-size: cover;
+	}
+
+	main img{
+		width: 80%;
+	}
+}
+
+
+@media only screen and (min-width: 500px) {
+	body{
+		width: 90%;
+		margin: 0 auto;
+		background-size: cover;
+
+	}
+
+	main img{
+		width: 80%;
+		margin: 0% auto;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+
+	body{
+		width: 90%;
+		margin: 0 auto;
+	
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: hsl(257, 40%, 49%);
+	}
+
+	main{
+		display: flex;
+		align-items: space-between;
+		margin-bottom: 0%;
+	}
+	.logo embed{
+		width: 225px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	main img{
+		width: 60%;
+		margin: 0% 0% 5%;
+	}
+
+	main h1, main p, main div, main button {
+		margin: 2% 0% 2% 3%;
+		text-align: left;
+	}
+
+	main h1{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		color: white;
+		font-size: 260%;
+		line-height: 1.5;
+	}
+	main p{
+		font-family: 'Open Sans';
+		font-weight: 400;
+		color:  hsl(258, 100%, 90%);
+		font-size: 115%;
+		line-height: 1.45;
+		margin-top: 5%;
+	}
+
+	.register {
+		height: 30px; /**/
+		width: 200px; /**/
+		font-size: 20px;
+		padding: 25px; /**/
+	}
+
+	/******* Socials ********/
+
+	.socials embed{
+		width: 18px;
+		height: 18px;
+		padding: 10px;
+		border: white solid 1px;
+		border-radius: 100%;
+		color: white;
+	}
+
+	.socials{
+		display: flex;
+		justify-content: space-between;
+		width: 150px;
+		margin: 0% auto;
+		float: right;
+	}
+
+	/******* Footer ********/
+
+	footer p{
+		display: inline-block;
+		font-size: 60%;
+		text-align: center;
+		margin: 3% auto 0%;
+		position: absolute;
+	}
+  }
+  
+
