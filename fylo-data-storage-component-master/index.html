@@ -6,40 +6,56 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicon-32x32.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="resources/css/reset.css">
   <link rel="stylesheet" href="resources/css/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   
   
   <title>Frontend Mentor | Fylo data storage component</title>
   
 </head>
 <body>
-
-  <div class = "logo-wrapper">
-    <embed src="resources/images/logo.svg">
-      <div class = "action-wrapper">
-        <embed src="resources/images/icon-document.svg">
+  <div class = "content">
+    <div class = "logo-wrapper">
+      <embed id="logo" src="resources/images/logo.svg">
+      <div class = "actions">
+        <button>
+          <embed src="resources/images/icon-document.svg">
+        </button>
+        <button>
           <embed src="resources/images/icon-folder.svg">
+        </button>
+        <button>
           <embed src="resources/images/icon-upload.svg">
+        </button>
       </div>
-  </div>
-
-  <div class = "data-wrapper">
-    <p>You’ve used 815 GB of your storage</p>
-
-    <i class = "min-data">0 GB</i>
-    <i class = "max-data">1000 GB</i>
-
-    <div class = "data-left">
-      <i class = "amount">185</i>
-      <i class = "text">GB Left</i>
     </div>
-    
-
+  
+    <div class = "data-wrapper">
+      <p>You’ve used <i style="color: white">815 GB</i> of your storage</p>
+  
+      <div class="usage">
+        <div class="data-available">
+          <div class="data-bar">
+            <div class="data-circle"></div>
+          </div>
+        </div>
+        <div class="min-max">
+          <i class = "min-data">0 GB</i>
+          <i class = "max-data">1000 GB</i>
+        </div>
+      </div>
+  
+      <div class = "data-remaining">
+        <i class = "num">185</i>
+        <i class = "text"> GB Left</i>
+      </div>
+      
+  
+    </div>
   </div>
-  
-  
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Kayla Wilson @DevByKay</a>.

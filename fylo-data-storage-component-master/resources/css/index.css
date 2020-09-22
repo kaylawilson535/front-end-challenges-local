@@ -1,55 +1,179 @@
-
-/*
-- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
-
-- Pale Blue: hsl(243, 100%, 93%)
-- Grayish Blue: hsl(229, 7%, 55%)
-- Dark Blue: hsl(228, 56%, 26%)
-- Very Dark Blue: hsl(229, 57%, 11%)
-*/
-*{
+/********* Basic Tags *********/
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    width: 90%;
+    margin: 0% auto;
     font-family: 'Raleway', sans-serif;
-    color: hsl(243, 100%, 93%)
+    color: hsl(243, 100%, 93%);
+    background-image: url("../images/bg-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(229, 57%, 11%);
 }
 
-body{
-    background-image: url("../images/bg-mobile.png");
+/********* Logo & Button Container *********/
+
+/** Logo **/
+.logo-wrapper{
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    margin: 40% auto 5%;
+    background-color: hsl(228, 56%, 26%);
+    padding: 10% 0%;
+}
+#logo{
+    margin: 0% 0% 10% 10%;
+}
+.logo-wrapper button{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 0% 0% 5%;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 20%;
+    border: none;
+}
+
+/** Buttons **/
+.actions {
+    margin-left: 10%;
+    width: 200px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+/********* Data Usage Container *********/
+.data-wrapper{
+    position: relative;
+    border-radius: 10px;
+    margin: 0% auto;
+    background-color: hsl(228, 56%, 26%);
+    padding: 10% 0%;
+    text-align: center;
+    height: 100px;
+}
+
+/** Text Prompt **/
+.usage{
+    padding: 5% 0%;
     width: 80%;
     margin: 0 auto;
 }
 
-.logo-wrapper, .data-wrapper{
-    background-color: hsl(228, 56%, 26%);
-    margin: 20px auto;
-    padding: 20%;
+/** Data Bar Graphics and Subtext **/
+.data-available, .data-bar{
+    border-radius: 10px;
 }
-
-.logo-wrapper{
-
-    
-}
-
-.action-wrapper{
+.data-available{
+    position: relative;
+    width: 100%;
+    height: 20px;
     background-color: hsl(229, 57%, 11%);
-    padding: 5px;
 }
-
-.data-left{
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+.data-bar{
+    position: absolute;
+    top: 2px;
+    width: 81.5%;
+    height: 15px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%) ,  hsl(335, 100%, 65%));
+}
+.data-circle{
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    width: 13px;
+    height: 13px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 100%;
+}
+.min-max{
+    padding: 5% 0%;
+}
+.min-data{
+    float: left;
+}
+.max-data{
+    float: right;
 }
 
-.data-left .amount{
+/** Data Usage Popup Box **/
+.data-remaining{
+    padding: 5%;
+    width: 170px;
     font-weight: 700;
-    font-size: 200%;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-remaining .num{
+    font-weight: 700;
+    font-size: 250%;
     color: hsl(229, 57%, 11%);
 }
 
-.data-left .text{
+.data-remaining .text{
     color:  hsl(229, 7%, 55%);
     font-size: 90%;
+    padding-left: 5px;
+}
+
+/********* Attribution *********/
+.attribution{
+    text-align: center;
+    font-size: 10%;
+    margin: 30% auto 0%;
+}
+
+@media only screen and (min-width: 420px){
+    .logo-wrapper, .data-wrapper{
+        width: 380px;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .logo-wrapper{
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .logo-wrapper{
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .content{
+        width: 75%;
+        margin: 20% auto;
+        display: flex;
+        vertical-align: bottom;
+    }
+    .logo-wrapper{
+        
+        height: 175px;
+        margin: 0% auto;
+        padding: 0%;
+        padding-top: 50px;
+        align-self: flex-end;
+
+    }
+    .data-wrapper{
+        width: 60%;
+        height: 150px;
+        margin-top: 0%;
+        margin-left: 5%;
+        padding: 0%;
+        padding-top: 30px;
+        align-self: flex-end;
+    }
+
 }

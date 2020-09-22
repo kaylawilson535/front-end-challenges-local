@@ -3,12 +3,9 @@
 /******* Mobile-First Design ********/
 
 /******* Tags ********/
-*{
-	color: hsl(258, 100%, 90%);
-}
-
 html, body{
 	height: 100%;
+	color: hsl(258, 100%, 90%);
 }
 
 body{
