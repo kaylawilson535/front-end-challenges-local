@@ -1,4 +1,6 @@
 /*
+ctr+d selects all the elements of the same name
+
 ## Colors
 
 ### Primary
@@ -19,3 +21,170 @@
 Headings, CTA, Nav = font-family: 'Raleway', sans-serif; (400, 700)
 Body = font-family: 'Open Sans', sans-serif; (400)
 */
+body{
+    background-image: url("../images/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(243, 87%, 12%);
+
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 85%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+
+/********** Header **********/
+header{
+    padding: 2rem 0;
+    display: flex;
+    position: relative;
+}
+nav{
+    position: absolute;
+    right: 0;
+}
+header img{
+    width: 22%;
+
+}
+nav a{
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    padding-left: .75rem;
+    font-size: .8rem;
+    color: hsl(243, 87%, 12%);
+    text-decoration: none;
+}
+
+/********** CTA section **********/
+.cta-wrapper img{
+    margin: 2rem 0;
+}
+.bold-cta h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.bold-cta p{
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+/** Input Form & Button **/
+.cta-form input{
+    width: 98%;
+    border-radius: .3rem;
+    height: 2.2rem;
+    background-color: hsl(240, 75%, 98%);
+    border-width: .12rem;
+}
+.cta-form input::placeholder{
+    color: hsl(0, 0%, 75%);
+    padding-left: 1rem;
+}
+.cta-form button{
+    width: 100%;
+    border-radius: .3rem;
+    padding: .75rem 0;
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+    font-family: 'Raleway', sans-serif;
+    font-size: .9rem;
+    border-width: 0rem;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 75%);
+}
+
+/********** Info section **********/
+.info-wrapper img{
+    margin: 6rem auto;
+}
+.info h3{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.info p{
+    color: hsl(243, 87%, 12%);
+    font-size: .85rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+.info-link{
+    text-align: center;
+}
+.info-link a{
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+#cta-underline{
+    margin: 0 auto 2rem;
+    width: 45%;
+    background-color: hsl(170, 45%, 43%);
+}
+
+/********** Info Review **********/
+.review{
+    width: 80%;
+    background-color: white;
+    border-radius: .5rem;
+    margin: 3rem auto 5rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 20px 1px hsl(0, 0%, 75%);
+}
+.review img{
+    width: 20%;
+    margin: 0;
+    border-radius: 100%;
+}
+.review embed{
+    width: 20px;
+    height: 20px;
+}
+.review p{
+    margin: 0;
+    font-size: .7rem;
+    line-height: 1.5;
+}
+.reviewer{
+    margin-top: 1rem;
+    width: 8rem;
+    display: flex;
+    position: relative;
+}
+.user{
+    position: absolute;
+    right: 0;
+}
+.user h4{
+    font-size: .7rem;
+    font-weight: 700;
+    padding-bottom: .3rem;
+}
+.user p{
+    font-size: .5rem;
+    font-weight: 700;
+}
+
+/********** CTA Footer **********/
+.footer-cta-wrapper{
+    background-color: hsl(238, 22%, 44%);
+
+}
+
+/********** Info Footer **********/
+footer{
+    background-color: hsl(243, 87%, 12%);
+}
