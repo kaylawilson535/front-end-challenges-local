@@ -1,43 +1,55 @@
 /*
 ctr+d selects all the elements of the same name
 
-## Colors
-
-### Primary
-
-- Very Dark Blue: hsl(243, 87%, 12%)
-- Desaturated Blue: hsl(238, 22%, 44%)
-
-### Accent
-
-- Bright Blue: hsl(224, 93%, 58%)
-- Moderate Cyan: hsl(170, 45%, 43%)
-
-### Neutral
-
-- Light Grayish Blue: hsl(240, 75%, 98%)
-- Light Gray: hsl(0, 0%, 75%)
-
-Headings, CTA, Nav = font-family: 'Raleway', sans-serif; (400, 700)
-Body = font-family: 'Open Sans', sans-serif; (400)
+    - Change background img!! In mobile & Desktop
 */
+/*------- Mobile First Design -------*/
+
+/********** General Tags **********/
 body{
     background-image: url("../images/bg-curve-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    
     font-family: 'Open Sans', sans-serif;
     color: hsl(243, 87%, 12%);
-
     margin: 0;
     padding: 0;
 }
+
 .content{
     width: 85%;
     margin: 0 auto;
 }
 img{
     width: 100%;
+}
+a{
+    margin: 0;
+    padding: 0;
+}
+
+/********** CTA Form-Input-Button **********/
+input{
+    width: 98%;
+    border-radius: .3rem;
+    height: 2.2rem;
+    background-color: hsl(240, 75%, 98%);
+    border-width: .12rem;
+}
+input::placeholder{
+    color: hsl(0, 0%, 75%);
+    padding-left: 1rem;
+}
+button{
+    width: 100%;
+    border-radius: .3rem;
+    padding: .75rem 0;
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+    font-family: 'Raleway', sans-serif;
+    font-size: .9rem;
+    border-width: 0rem;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 75%);
 }
 
 /********** Header **********/
@@ -52,7 +64,6 @@ nav{
 }
 header img{
     width: 22%;
-
 }
 nav a{
     font-family: 'Raleway', sans-serif;
@@ -62,7 +73,6 @@ nav a{
     color: hsl(243, 87%, 12%);
     text-decoration: none;
 }
-
 /********** CTA section **********/
 .cta-wrapper img{
     margin: 2rem 0;
@@ -80,30 +90,6 @@ nav a{
     margin: 2rem 0;
 }
 
-/** Input Form & Button **/
-.cta-form input{
-    width: 98%;
-    border-radius: .3rem;
-    height: 2.2rem;
-    background-color: hsl(240, 75%, 98%);
-    border-width: .12rem;
-}
-.cta-form input::placeholder{
-    color: hsl(0, 0%, 75%);
-    padding-left: 1rem;
-}
-.cta-form button{
-    width: 100%;
-    border-radius: .3rem;
-    padding: .75rem 0;
-    background-color: hsl(224, 93%, 58%);
-    color: hsl(240, 75%, 98%);
-    font-family: 'Raleway', sans-serif;
-    font-size: .9rem;
-    border-width: 0rem;
-    box-shadow: 2px 2px 5px hsl(0, 0%, 75%);
-}
-
 /********** Info section **********/
 .info-wrapper img{
     margin: 6rem auto;
@@ -114,14 +100,12 @@ nav a{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
-
-.info p{
+.info-text{
     color: hsl(243, 87%, 12%);
     font-size: .85rem;
     line-height: 1.5;
     margin-top: 2rem;
 }
-
 .info-link{
     text-align: center;
 }
@@ -179,12 +163,246 @@ nav a{
 }
 
 /********** CTA Footer **********/
+.footer-content{
+    width: 85%;
+    margin: 0 auto;
+}
 .footer-cta-wrapper{
     background-color: hsl(238, 22%, 44%);
-
+    text-align: center;
+    color: hsl(240, 75%, 98%);
+    padding: 3rem;
+}
+.footer-cta-wrapper h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+.prompt{
+    font-size: .85rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+.footer-cta-wrapper form{
+    width: 95%;
+    margin: 0rem auto;
+}
+.footer-cta-wrapper button{
+    margin-top: -.5rem;
+    box-shadow: 1px 0px 20px hsl(238, 22%, 44%);
+    font-size: .8rem;
 }
 
 /********** Info Footer **********/
 footer{
     background-color: hsl(243, 87%, 12%);
+    color: white;
+}
+.logo-footer{
+    margin: 3rem 2rem 3rem 0rem;
+}
+.contact-graphic{
+    color: white;
+    width: 10%;
+    padding-right: 1rem;
+}
+.contact-footer{
+    margin-bottom: 2rem;
+}
+.contact-footer p{
+    display: inline-block;
+    transform: translateY(-1rem);
+}
+
+/** Footer Links **/
+.links-prime, .links-secondary{
+    padding: .5rem 0;
+}
+.links-prime a, .links-secondary a{
+    display: block;
+    color:  hsl(240, 75%, 98%);
+    text-decoration: none;
+    padding: .7rem 0;
+}
+
+/** Socials **/
+.socials{
+    width: 10rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.socials embed{
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid white;
+    padding: .4rem;
+    margin: .2rem;
+    border-radius: 100%;
+}
+
+/********** Attribution **********/
+.attribution{
+    color: white;
+    text-align: center;
+    font-size: .3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: hsl(243, 87%, 12%);
+}
+
+@media only screen and (min-width: 1400px){
+    /*
+    - Change background img!!
+
+    - Adjust the text in info
+    - Make footer1 text and input side by side
+    - Adjust footer cta button-input size
+    - Make footer content sit in columns
+    - Fix footer contact stuff (in iPhone as well)
+    */
+
+    content{
+        background-image: url("../images/bg-curve-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cta-wrapper, .info-wrapper{
+        width: 50%;
+        margin: 3rem 0rem 10rem;
+    }
+    img{
+        width: 40%;
+        float: right;
+    }
+    /********** Header **********/
+    header img{
+        width: 10%;
+    }
+    header{
+        padding: 4rem 0rem 4rem;
+    }
+
+    /********** Top CTA **********/
+    .bold-cta h2, .bold-cta p{
+        text-align: left;
+    }
+    .bold-cta h2{
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+    }
+    .bold-cta p{
+        font-family: 'Raleway', sans-serif;
+        margin: 1rem 0;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    /** CTA Input **/
+
+
+    /********** Attribution **********/
+    .cta-form{
+        display:flex;
+    }
+    .cta-form input, .cta-form button{
+        margin: 0;
+        width: 40%;
+        display: inline-block;
+    }
+    .cta-form button{
+        margin-left: 1rem;
+    }
+
+    /********** Information Section **********/
+    .info h3{
+        font-family: 'Raleway', sans-serif;
+        text-align: left;
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+    }
+    .info-text{
+        width: 80%;
+        line-height: 1.2rem;
+        margin: 1rem 0rem;
+        font-size: 1rem;
+    }
+    .info-link{
+        text-align: left;
+        padding: 0;
+
+    }
+    #cta-underline{
+        text-align: left;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /********** Info Review **********/
+    .review{
+        width: 50%;
+        margin: 3rem;
+        padding: 2rem;
+    }
+    .review embed{
+        width: 20px;
+        height: 20px;
+    }
+    .reviewer{
+        width: 8rem;
+    }
+    p.review-text{
+        font-size: 1rem;
+    }
+
+    /********** CTA Footer **********/
+    .footer-cta-wrapper{
+        display: flex;
+        text-align: left;
+        padding: 5rem;
+    }
+    .prompt h3{
+        font-size: 2rem;
+    }
+    .prompt{
+        font-size: 1.2rem;
+    }
+    .footer-cta-wrapper form{
+        margin: 2rem 0rem 0rem 10rem;
+    }
+    .footer-cta-form input{
+        width: 70%;
+    }
+    .footer-cta-form button{
+        width: 30%;
+        margin: 0;
+    }
+
+    /********** Footer **********/
+    footer{
+        padding-left: 7rem;
+        padding-top: 7rem;
+    }
+    .logo-footer{
+        margin: 0;
+        display: block;
+    }
+    .footer-links{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    .socials{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact-text{
+        padding-right: 2rem;
+    }
 }
