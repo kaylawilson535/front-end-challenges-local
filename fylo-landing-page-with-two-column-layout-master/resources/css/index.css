@@ -201,19 +201,22 @@ footer{
     color: white;
 }
 .logo-footer{
+    display: block;
     margin: 3rem 2rem 3rem 0rem;
+    width: 200px;
 }
 .contact-graphic{
     color: white;
-    width: 10%;
+    width: 25px;
     padding-right: 1rem;
 }
 .contact-footer{
     margin-bottom: 2rem;
+    width: 30%;
+
 }
 .contact-footer p{
-    display: inline-block;
-    transform: translateY(-1rem);
+    padding-top: 15px;
 }
 
 /** Footer Links **/
@@ -361,11 +364,6 @@ footer{
     }
 
     /********** CTA Footer **********/
-    .footer-cta-wrapper{
-        display: flex;
-        text-align: left;
-        padding: 5rem;
-    }
     .prompt h3{
         font-size: 2rem;
     }
@@ -386,13 +384,16 @@ footer{
     /********** Footer **********/
     footer{
         padding-left: 7rem;
-        padding-top: 7rem;
+        padding-top: 4rem;
     }
     .logo-footer{
         margin: 0;
         display: block;
+        float: left;
     }
     .footer-links{
+        text-align: left;
+        padding-right: 10rem;
         width: 80%;
         display: flex;
         justify-content: space-between;
@@ -402,7 +403,15 @@ footer{
         margin-left: 0;
         margin-right: 0;
     }
-    .contact-text{
-        padding-right: 2rem;
+    .contact-graphic{
+        float: left;
+    }
+    .contact-footer{
+        margin-bottom: 2rem;
+        width: 20%;
+    
+    }
+    .contact-footer p{
+        padding-top: 15px;
     }
 }
