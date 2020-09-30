@@ -24,28 +24,20 @@ body{
     color: hsl(208, 11%, 55%);
     margin: 0;
 }
-
 img{
     width: 50%;
-}
-
-ul{
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-div{
-    padding: 0px;
 }
 
 /*********** Header ***********/
 
 .header-wrapper{
     background-image: url("../images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(193, 100%, 96%);
+}
+.header-content{
     display: grid;
     grid-template-areas: 'top' 'bottom';
-    background-color: hsl(193, 100%, 96%);
 }
 
 /*********** Header Nav ***********/
@@ -68,7 +60,7 @@ div{
 }
 
 .nav-btn{
-    border-radius: 10px;
+    border-radius: 25px;
     width: 90%;
     height: 100%;
     background-color: hsl(0, 0%, 100%);
@@ -105,8 +97,8 @@ div{
     border: none;
     box-shadow: 10px 10px 25px hsl(190, 22%, 68%);
     border-radius: 25px;
-    width: 90%;
-    height: 100%;
+    width: 15rem;
+    height: 3rem;
     padding: 5%;
     margin: 15% auto;
     color: hsl(0, 0%, 100%);
@@ -168,7 +160,7 @@ div{
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 5% auto;
-    border-radius: 7%;
+    border-radius: 10px;
     box-shadow: 5px 5px 10px hsl(208, 11%, 55%);
     text-align: center;
 }
@@ -200,6 +192,8 @@ div{
 /*********** Footer ***********/
 footer{
     background-color: hsl(192, 100%, 9%);
+}
+.footer-content{
     padding: 0 10%;
 }
 footer p, footer a{
@@ -245,23 +239,136 @@ footer p, footer a{
     font-size: .7rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*********** Web-Friendly ***********/
-
+/*
+TODO:
+- padding in the blue image up top
+- margin between first card and the top
+- responsiveness
+- Footer logo
+*/
 
 @media (min-width: 1440px){
-    body{
-        
+
+    /*********** Header ***********/
+    .header-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .nav-brand{
+        width: 20rem;
+        padding: 5% 0%;
+    }
+    .nav-button{
+        padding: 5% 0%;
+        width: 10rem;
+        height: 2rem;
+    }
+    .intro-section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .heading-text{
+        width: 30%;
+    }
+    .heading-text h1{
+        text-align: left;
+        padding-bottom: 0;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .heading-text p{
+        text-align: left;
+        padding: 1.5rem 0rem;
+        line-height: 1.25;
+    }
+    .intro-button{
+        padding: 2%;
+        margin: 0;
+    }
+    .intro-img{
+        width: 50%;
+        padding-bottom: 3rem;
+    }
+
+    /*********** Cards ***********/
+    .card-wrapper{
+        margin-top: 2rem;
+    }
+    .card{
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .card img{
+        width: 25%;
+        padding: 3rem 3rem;
+    }
+    .card-text{
+        width: 40%;
+        padding: 7rem 2rem;
+    }
+    .card-text h2{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    .card-text p{
+        font-size: .8rem;
+    }
+    .reverse{
+        flex-flow: row-reverse;
+    }
+
+    /*********** Footer CTA ***********/
+    .cta-card{
+        margin: 5% auto 0%;
+        width: 60%;
+        transform: translateY(-100px);
+    }
+    .cta-header{
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        width: 95%;
+        font-weight: 700;
+    }
+    
+    .cta-button{
+        font-size: 1.25rem;
+        border-radius: 75px;
+        width: 50%;
+        height: 80%;
+        padding: 3%;
+        margin: 4% auto 3%;
+        color: hsl(0, 0%, 100%);
+    }
+    /*********** Footer CTA ***********/
+    .footer-brand{
+        display: block;
+    }
+    .contact-info{
+        width: 30%;
+    }
+    .flexed{
+        display: flex;
+        justify-content: space-between;
+    }
+    .socials{
+        margin: 0;
+    }
+
+    /*********** Attribution ***********/
+    .footer-brand{
+        width: 15rem;
+        padding-bottom: 2rem;
+    }
+    .attribution{
+        text-align: right;
+        margin: 0;
     }
 }
