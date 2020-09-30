@@ -97,6 +97,7 @@ header a{
 }
 .benefits img{
     width: 4rem;
+    height: 4rem;
     margin: 0 auto;
 }
 .benefit{
@@ -143,8 +144,9 @@ header a{
 .reviews{
     margin: 10rem 0 15rem;
 }
-.reviews img{
+#quotes-img{
     width: 1.5rem;
+    height: 1.5rem;
 }
 .review{
     background-color: hsl(219, 30%, 18%);
@@ -275,7 +277,126 @@ footer{
 
 @media only screen and (min-width: 1400px){
    .landing img, .information img{
-       width: 60%;
+       width: 100%;
        margin: 0 auto;
    }
+   /********** Header **********/
+
+    header{
+        padding-top: 3rem;
+    }
+    header img{
+        width: 10rem;
+    }
+    nav{
+        width: 20%;
+    }
+
+    /********** Landing Section **********/
+    .landing{
+        margin: 3rem auto 5rem;
+        width: 60%;
+    }
+
+    .landing-text h2{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    .landing-text p{
+        width: 85%;
+        margin: 0 auto;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    /********** Landing Section **********/
+    .benefits{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .benefit{
+        flex-basis: 35%;
+    }
+    .benefit p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .benefits img{
+        width: 5rem;
+        height: 5rem;
+    }
+    /********** Information Section **********/
+    .information{
+        display: flex;
+    }
+    .information img, .information-text{
+        width: 45%;
+    }
+    .information-text h3{
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .information-text p{
+        font-size: 1rem;
+        padding: 1rem 0 1rem;
+    }
+    /********** Review Section **********/
+    .reviews{
+        margin-bottom: 20rem;
+    }
+    .review-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .review{
+        flex-basis: 27%;
+    }
+    .review p{
+        font-size: .9rem;
+    }
+
+    /********** CTA Section **********/
+    .cta{
+        width: 60%; 
+        transform: translateY(-120px);
+    }
+    .cta p{
+        width: 75%; 
+        margin: 0 auto;
+    }
+    .cta-form{
+        padding-top: 2rem;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .cta-form input{
+        flex-basis: 65%;
+        height: 3rem;
+    }
+    .cta-form button{
+        flex-basis: 30%;
+        height: 3rem;
+    }
+
+    /********** Footer **********/
+    .footer-logo{
+        padding-left: 7rem;
+    }
+    .main-footer{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-links{
+        flex-basis: 30%;
+    }
+    .contact-links p{
+        line-height: 1.5;
+    }
+    
 }
