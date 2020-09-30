@@ -1,0 +1,281 @@
+/*
+## Colors
+
+### Primary
+
+- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+
+### Accent
+
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+
+Headings, CTAs, Nav - font-family: 'Raleway', sans-serif; 400,700
+Body - font-family: 'Open Sans', sans-serif;
+*/
+
+body{
+    background-image: url("../images/bg-curvy-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: hsl(218, 28%, 13%);
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+}
+.content{
+    width: 85%;
+    margin: 0 auto;
+}
+button{
+    width: 15rem;
+    color: white;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border-radius: 25px;
+    border-style: none;
+    padding: 1rem 0;
+}
+
+/********** Header **********/
+
+header{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 20%;
+}
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: .7rem;   
+}
+
+/********** 1st Landing Section **********/
+.landing{
+    text-align: center;
+    margin: 2rem 0rem 5rem;
+}
+.landing img{
+    width: 90%;
+    margin: 0 auto;
+}
+.landing-text h2{
+    padding-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.landing-text p{
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.2;
+    padding: 1.5rem 0rem;
+}
+
+
+/********** Benefits Section **********/
+.benefits{
+    text-align: center;
+    margin: 7rem 0 10rem;
+}
+.benefits img{
+    width: 4rem;
+    margin: 0 auto;
+}
+.benefit{
+    margin-bottom: 5rem;
+}
+.benefit h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 2rem 0 1rem;
+}
+.benefit p{
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+/********** Information Section **********/
+.information img{
+    width: 100%;
+    margin: 0 auto;
+}
+.information-text h3{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 1.5rem 0 1rem;
+}
+.information-text p{
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+.information-link a{
+    text-decoration: none;
+    color:  hsl(176, 68%, 64%);
+    border-bottom: 1px solid  hsl(176, 68%, 64%);
+}
+
+/********** Reviews Section **********/
+.reviews{
+    margin: 10rem 0 15rem;
+}
+.reviews img{
+    width: 1.5rem;
+}
+.review{
+    background-color: hsl(219, 30%, 18%);
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    padding: 1.75rem;
+}
+.review-text{
+    padding-bottom: 1.5rem;
+    font-size: .7rem;
+    line-height: 1.75;
+}
+.user{
+    display: flex;
+}
+.user img{
+    width: 2rem;
+    border-radius: 100%;
+}
+.user-text{
+    padding-left: .5rem;
+}
+.user-name{
+   font-weight: 700;
+   font-size: .8rem; 
+   padding-bottom: .3rem;
+}
+.user-title{
+    font-size: .6rem;
+}
+
+/********** CTA Section **********/
+.cta{
+    width: 75%;
+    margin: 0 auto;
+    transform: translateY(-100px);
+    background-color: hsl(217, 28%, 15%);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.cta-text h3{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
+.cta-text p{
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+.cta-form input{
+    width: 15rem;
+    height: 2.25rem;
+    border-radius: 25px;
+    border-style: none;
+    margin-bottom: 1rem;
+}
+.cta-form input::placeholder{
+    color: #A6A6A4;
+    padding-left: 2rem;
+    font-size: .6rem;
+}
+
+.cta-form button{
+    width: 90%;
+    padding: .75rem 0;
+}
+
+/********** Footer **********/
+footer{
+    background-color: hsl(216, 53%, 9%);
+}
+.footer-logo{
+    margin: 0rem 2rem 3rem;
+}
+.main-footer{
+    width: 90%;
+    margin: 0 auto;
+}
+.contact-links{
+    padding-bottom: 3rem;
+}
+.contact-icon{
+    padding-right: 1.5rem;
+}
+.contact-links p{
+    padding-bottom: 1rem;
+}
+.secondary-links, .tertiary-links{
+    padding-bottom: 3rem;
+}
+.secondary-links a, .tertiary-links a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+/** Socials **/
+.socials{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.socials embed{
+    width: .7rem;
+    height: .7rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: .3rem;
+    margin: .25rem;
+}
+
+/** Attribution **/
+.attribution{
+    font-size: .6rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.attribution a{
+    color: white;
+}
+
+/********** Web Design **********/
+
+@media only screen and (min-width: 1400px){
+   .landing img, .information img{
+       width: 60%;
+       margin: 0 auto;
+   }
+}
