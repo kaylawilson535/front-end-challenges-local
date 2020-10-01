@@ -17,6 +17,9 @@
 
 </head>
 <body>
+  <div id="main-content">
+
+ 
 
   <section class="landing">
     <img src="resources/images/logo.svg">
@@ -27,10 +30,10 @@
       Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
     </p>
     <div class="download">
-      <button>
+      <button class="green">
         Download for iOS
       </button>
-      <button>
+      <button class="blue">
         Download for Mac
       </button>
     </div>
@@ -46,10 +49,11 @@
       </p>
     </article>
 
-    <img class="computer" src="resources/images/image-computer.png">
+    <div class="side-img">
+      <img class="computer" src="resources/images/image-computer.png">
 
-    <div class="tri-benefit">
-      <article class="benefit">
+    <div class="tri-benefit tri-stack">
+      <article class="benefit stack">
         <h3>
           Quick Search
         </h3>
@@ -57,7 +61,7 @@
           Easily search your snippets by content, category, web address, application, and more.
         </p>
       </article>
-      <article class="benefit">
+      <article class="benefit stack">
         <h3>
           iCloud Sync
         </h3>
@@ -65,7 +69,7 @@
           Instantly saves and syncs snippets across all your devices.
         </p>
       </article>
-      <article class="benefit">
+      <article class="benefit stack">
         <h3>
           Complete History
         </h3>
@@ -74,8 +78,10 @@
         </p>
       </article>
     </div>
+    </div>
+    
 
-    <article class="benefit">
+    <article class="benefit extra-top-margin">
       <h3>
         Access Clipboard anywhere
       </h3>
@@ -96,7 +102,7 @@
     </article>
 
     <div class="tri-benefit">
-      <article class="benefit">
+      <article class="benefit side-by-side">
         <img src="resources/images/icon-blacklist.svg">
         <h3>
           Create blacklists
@@ -105,7 +111,7 @@
           Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
         </p>
       </article>
-      <article class="benefit">
+      <article class="benefit side-by-side">
         <img src="resources/images/icon-text.svg">
         <h3>
           Plain text snippets
@@ -114,7 +120,7 @@
           Remove unwanted formatting from copied text for a consistent look.
         </p>
       </article>
-      <article class="benefit">
+      <article class="benefit side-by-side">
         <img src="resources/images/icon-preview.svg">
         <h3>
           Sneak preview
@@ -136,37 +142,38 @@
   </section>
 
   <section class="cta">
-    <h3>
+    <h2>
       Clipboard for iOS and Mac OS
-    </h3>
+    </h2>
     <p>
       Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
     </p>
     <div class="download">
-      <button>
+      <button class="green">
         Download for iOS
       </button>
-      <button>
+      <button class="blue">
         Download for Mac
       </button>
     </div>
   </section>
+</div>
 
   <footer>
 
     <section class="footer-content">
-      <img src="resources/images/logo.svg">
+      <img class="flex-child" src="resources/images/logo.svg">
 
-      <a href="#">FAQs</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Press Kit</a>
-      <a href="#">Install Guide</a>
+      <a class="flex-child" href="#">FAQs</a>
+      <a class="flex-child" href="#">Contact Us</a>
+      <a class="flex-child" href="#">Privacy Policy</a>
+      <a class="flex-child" href="#">Press Kit</a>
+      <a class="flex-child" href="#">Install Guide</a>
 
       <div class="socials">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
+        <a href="social"><i class="fab fa-2x fa-facebook-f"></i></a>
+        <a href="social"><i class="fab fa-2x fa-twitter"></i></a>
+        <a href="social"><i class="fab fa-2x fa-instagram"></i></a>
       </div>
 
     </section>
