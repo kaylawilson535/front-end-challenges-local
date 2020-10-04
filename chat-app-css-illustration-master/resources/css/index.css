@@ -1,0 +1,59 @@
+/*
+- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
+- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
+- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
+- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
+- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+
+#### Gradients
+
+These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+
+- Light Magenta: hsl(293, 100%, 63%)
+- Light Violet: hsl(264, 100%, 61%)
+
+### Secondary
+
+- White: hsl(0, 0%, 100%)
+- Light Grayish Violet (app background): hsl(270, 20%, 96%)
+- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
+- Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
+
+font-family: 'Rubik', sans-serif; avail in 400, 500, 700
+*/
+body, h2, p{
+    font-family: 'Rubik', sans-serif;
+    background-color:hsl(270, 20%, 96%); 
+}
+
+.phone-shape{
+    width: 15rem;
+    height: 20rem;
+    margin: 3rem auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    
+}
+
+.landing-text{
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+}
+.landing-text h2{
+    padding: 1rem 0rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(271, 36%, 24%);
+}
+
+.landing-text p{
+    font-size: 1.3rem; 
+    line-height: 1.3;
+    color: hsl(270, 7%, 64%);
+}
+.attribution{
+    font-size: .7rem;
+    text-align: center;
+}
