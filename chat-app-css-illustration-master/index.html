@@ -8,18 +8,15 @@
   <link rel="stylesheet" href="resources/css/index.css">
   <link rel="stylesheet" href="resources/css/reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
 
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
 </head>
 <body>
-
-  <div class="background-img">
-    
-  </div>
-
+  
   <div class="content">
+    <div class="background-img"></div>
 
     <div class="phone-shape">
     
@@ -43,22 +40,27 @@
         </div>
   
         <div class= "left-text text">
-          That sounds great. I’d be happy with that.
+          <p>That sounds great. I’d be happy with that.</p>
+        </div>
+        <div class="blocked-row">
+          <div class= "left-text text">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+        </div>
+        
+        <div class= "right-text img-text" >
+          <img id="images" src="resources/images/dog-image-1.jpg">
+          <img id="images" src="resources/images/dog-image-2.jpg">
+          <img id="images" src="resources/images/dog-image-3.jpg">
+        </div>
+        <div class= "right-text text my-message">
+          <p>Here are a few pictures. She’s a happy girl!</p>
+        </div>
+        <div class= "right-text text my-message">
+          <p>Can you make it?</p>
         </div>
         <div class= "left-text text">
-          Could you send over some pictures of your dog, please?
-        </div>
-        <div class= "img-text">
-          
-        </div>
-        <div class= "right-text text">
-          Here are a few pictures. She’s a happy girl!
-        </div>
-        <div class= "right-text text">
-          Can you make it?
-        </div>
-        <div class= "left-text text">
-          She looks so happy! The time we discussed works. How long shall I take her out for?
+          <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
         </div>
         <div class= "walk-option left">
           <div class="checkbox"></div>
@@ -72,11 +74,12 @@
         </div>
         <form>
           <input type="text" placeholder="Type a message…">
+          <i class="fas fa-arrow-circle-right fa-2x send-arrow"></i>
         </form>
   
         <div class="phone-shape-top"></div>
       </div>
-  
+      <div class=background-img-bottom></div>
     </div>
   
     <div class="landing-text">
@@ -89,12 +92,16 @@
       </p>
       
     </div>
+
+  </div>
   
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </div>
-  </div>
+
+  
+  
   
 </body>
 </html>

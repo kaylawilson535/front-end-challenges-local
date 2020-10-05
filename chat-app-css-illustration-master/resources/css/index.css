@@ -22,6 +22,8 @@ These two colors are the vibrant background colors you see throughout the design
 
 font-family: 'Rubik', sans-serif; avail in 400, 500, 700
 */
+
+/********* Basic Tags *********/
 body{
     font-family: 'Rubik', sans-serif;
     background-color:hsl(270, 20%, 96%); 
@@ -33,6 +35,7 @@ h2, h3, p{
     font-family: 'Rubik', sans-serif;
 }
 
+/********* Basic Tags *********/
 .background-img{
     background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
     position: absolute;
@@ -41,11 +44,13 @@ h2, h3, p{
     width: 15rem;
     height: 50rem;
     border-bottom-right-radius: 15rem;
-
+    z-index: -1;
 }
+
+/********* Phone Shapes  *********/
 .phone-shape{
     width: 15rem;
-    height: 30rem;
+    height: 35rem;
     margin: 3rem auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 2rem;
@@ -53,13 +58,23 @@ h2, h3, p{
 }
 .screen-shape{
     width: 14rem;
-    height: 29rem;
+    height: 34rem;
     margin: .5rem auto;
     border-radius: 2rem;
     background-color: hsl(270, 20%, 96%); 
     transform: translateY(.5rem);
-
 }
+.phone-shape-top{
+    background-color: hsl(0, 0%, 100%);
+    width: 8rem;
+    height: 1.5rem;
+    position: absolute;
+    top: -.5rem;
+    left: 3rem;
+    border-radius: 3rem;
+}
+
+/********* Header *********/
 .conversation-header{
     background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     border-radius: 2rem 2rem .5rem .5rem;
@@ -81,107 +96,122 @@ h2, h3, p{
 .user-text small{
     font-size: .7rem;
 }
-.phone-shape-top{
-    background-color: hsl(0, 0%, 100%);
-    width: 8rem;
-    height: 1.5rem;
-    position: absolute;
-    top: -.5rem;
-    left: 3rem;
-    border-radius: 3rem;
-}
 .profile-pic{
     width: 1.75rem;
     border-radius: 100%;
     border: 1px solid white;
-
 }
 .arrow-holder{
     padding: 2rem .5rem;
     display: inline;
 }
 .triangle-left-visibile {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-right: 10px solid white;
-    border-bottom: 5px solid transparent;
-  }
-  .triangle-left-invisible {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-right: 10px solid hsl(264, 100%, 61%);
-    border-bottom: 5px solid transparent;
-    transform: translateX(.5rem);
-  }
-  .left{
-      float: left;
-  }
-  .left-text{
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 5px solid transparent;
+}
+.triangle-left-invisible {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid hsl(264, 100%, 61%);
+  border-bottom: 5px solid transparent;
+  transform: translateX(.5rem);
+}
+
+/********* Texts *********/
+.left{
     float: left;
-    background-color: #eae7f0;
-    color: hsl(276, 55%, 52%);
-    box-shadow: 2px 2px 7px #ddd;
-  }
-  .right-text{
-    float: right;
-    right: 0;
-    background-color: white;
-    box-shadow: 2px 2px 7px #ddd;
-  }
-  .text {
-    max-width: 9rem;
+}
+.left-text{
+  float: left;
+  background-color: #eae7f0;
+  color: hsl(276, 55%, 52%);
+  box-shadow: 2px 2px 7px #ddd;
+  margin-right: 4rem;
+}
+.right-text{
+  float: right;
+  right: 0;
+}
+.my-message{
+  background-color: white;
+  box-shadow: 2px 2px 7px #ddd;
+}
+.text {
+  max-width: 8rem;
+  border-radius: .5rem;
+  margin: .4rem;
+  font-size: .7rem;
+  padding: .4rem;
+  line-height: 1.2;
+}
+.right-text img{
+  float: right;
+  margin: .3rem;
+  width: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/********* Prices *********/
+.walk-option{
+    width: 10rem;
+    height: 2rem;
+    margin: .3rem;
+    background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     border-radius: .5rem;
-    margin: .4rem;
+    color: white;
+}
+.checkbox{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: .5rem;
+}
+.walk-duration{
     font-size: .6rem;
-    padding: .4rem;
-    line-height: 1.2;
-  }
-  .walk-option{
-      width: 10rem;
-      height: 2rem;
-      margin: .4rem;
-      background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
-      border-radius: .5rem;
-      color: white;
-  }
-  .checkbox{
-      display: inline-block;
-      width: 1rem;
-      height: 1rem;
-      border: 1px solid white;
-      border-radius: 50%;
-      margin: .5rem;
-  }
-  .walk-duration{
-      font-size: .6rem;
-      font-family: 'Rubik', sans-serif;
-      padding-left: .5rem;
-      position: absolute;
-      transform: translateY(.7rem);
-  }
-  .walk-price{
-      float: right;
-      font-weight: 700;
-      font-family: 'Rubik', sans-serif;
-      margin: .5rem;
-  }
-  form{
-      margin: 0 auto;
-  }
-  input{
-      width: 12rem;
-      margin: 2rem auto 1rem;
-      height: 2rem;
-      border-radius: 2rem;
-      border-style: none;
-  } 
+    font-family: 'Rubik', sans-serif;
+    padding-left: .5rem;
+    position: absolute;
+    transform: translateY(.7rem);
+}
+.walk-price{
+    float: right;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    margin: .5rem;
+}
 
+/********* Reply Box *********/
+form{
+    margin: 0 auto;
+    text-align: center;
+}
+input{
+    width: 12rem;
+    margin: .25rem auto 1rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border-style: none;
+}
+input::placeholder{
+    padding-left: 1rem;
+    font-size: .7rem;
+    color: hsl(206, 6%, 79%);
+}
+.send-arrow{
+    position: absolute;
+    right: 1.5rem;
+    bottom: .75rem;
+}
 
-
-
-
+/********* Call Out Information *********/
 .landing-text{
     width: 90%;
     margin: 3rem auto;
@@ -193,13 +223,44 @@ h2, h3, p{
     font-weight: bold;
     color: hsl(271, 36%, 24%);
 }
-
 .landing-text p{
     font-size: 1.3rem; 
     line-height: 1.3;
     color: hsl(270, 7%, 64%);
 }
+
+/********* Footer *********/
 .attribution{
     font-size: .7rem;
     text-align: center;
+}
+
+@media only screen and (min-width: 1400px){
+    /********* Layout *********/
+    .content{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin: 10rem auto 5rem;
+    }
+    .landing-text{
+        width: 60%;
+        margin: 0;
+        text-align: left;
+        margin-top: 10rem; /*lazy fix for responsiveness*/
+    }
+    .phone-shape{
+        margin: 0;
+    }
+
+    .background-img-bottom{
+        background-color:hsl(276, 100%, 81%);
+        position: absolute;
+        bottom: -3rem;
+        right: -3rem;
+        width: 15rem;
+        height: 30rem;
+        border-top-left-radius: 15rem;
+        z-index: -1;
+    }
 }
