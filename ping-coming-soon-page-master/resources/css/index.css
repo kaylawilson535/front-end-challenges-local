@@ -1,0 +1,121 @@
+/*
+
+- error color: hsl(354, 100%, 66%)
+
+*/
+/********** Mobile Design **********/
+
+
+/********** Main Tags **********/
+*{
+    font-family: 'Libre Fanklin' sans-serif;
+    color: hsl(209, 33%, 12%);
+    text-align: center;
+}
+
+/********** Landing Text **********/
+.landing-text{
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+}
+.logo{
+    width: 5rem;
+    margin-bottom: 3rem;
+}
+.landing-text h1{
+    font-size: 1.75rem;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 1.5rem;
+}
+strong{
+    color: black;
+    font-weight: 700;
+}
+small{
+    color: hsl(209, 33%, 12%);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/** Inputs **/
+input{
+    margin-top: 1.5rem;
+    width: 19rem;
+    height: 2.5rem;
+    border-radius: 3rem;
+    border: 1px solid hsl(223, 100%, 88%);
+}
+input::placeholder{
+    color: hsl(223, 100%, 88%);
+    font-size: .9rem;
+    padding-left: 2rem;
+}
+button{
+    width: 19rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border-style: none;
+    background-color: hsl(223, 87%, 63%);
+    box-shadow: 2px 2px 3px hsl(223, 95%, 50%);
+    color: white;
+    margin-top: 1rem;
+}
+
+/** Image **/
+.illustration{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/********** Footer **********/
+.socials{
+    margin: 5rem auto 2rem;
+}
+.socials i{
+    width: 1rem;
+    height: 1rem;
+    color:  hsl(223, 87%, 63%);
+    border: .5px solid hsl(223, 100%, 88%);
+    margin: 0rem .3rem;
+    padding: .5rem;
+    border-radius: 100%;
+}
+.attribution{
+    font-size: .7rem;
+    color: hsl(0, 0%, 59%);
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(0, 0%, 59%);
+}
+
+/********** Web Design **********/
+@media only screen and (min-width: 1400px){
+    /********** Landing Text **********/
+    .logo{
+        width: 5rem;
+        margin-bottom: 2rem;
+    }
+    .landing-text h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    /** Inputs **/
+    form{
+        width: 50%;
+        margin: 0 auto;
+    }
+    input{
+        width: 55%;
+    }
+    button{
+        width: 30%;
+    }
+
+    /** Image **/
+    .illustration{
+        width: 50%;
+    }
+}
