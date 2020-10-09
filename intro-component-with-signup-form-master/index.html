@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="resources/css/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
   <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <script defer src="index.js"></script>
 
 </head>
 <body>
@@ -32,35 +33,39 @@
         <strong>Try it free 7 days</strong> then $20/mo. thereafter
         </p>
       </div>
-      <form>
+      <form id="form">
+        <span id="error"></span>
         <input 
         type="text"
         name="fname"
         id="fname"
-        placeholder="First Name">
+        placeholder="First Name"
+        onKeydown="KeyPressed(event);">
   
         <input
         type="text"
         name="lname"
         id="lname"
-        placeholder="Last Name">
+        placeholder="Last Name"
+        onKeydown="KeyPressed(event);">
   
         <input 
         type="text"
         name="email"
         id="email"
-        placeholder="Email Address">
+        placeholder="Email Address"
+        onKeydown="KeyPressed(event);">
   
         <input 
-        type="text"
+        type="password"
         name="password"
         id="password"
-        placeholder="Password">
-  
-        <input 
-        class="button"
-        type="button" 
-        value="Claim your free trial">
+        placeholder="Password"
+        onKeydown="KeyPressed(event);">
+        
+        <button class = "button" type="submit">
+          Claim your free trial
+        </button>
   
         <p>By clicking the button, you are agreeing to our <span class="red">Terms and Services</span></p>
       </form>
