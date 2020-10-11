@@ -21,6 +21,12 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
     color: hsl(0, 36%, 70%);
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.logo{
+    width: 5rem;
+    margin: 1rem;
 }
 
 .attribution{
@@ -33,4 +39,107 @@ body{
 .attribution a {
     text-decoration: none;
     color: hsl(0, 36%, 70%);
+}
+.landing{
+    width: 90%;
+    margin: 3rem auto;
+}
+.landing-text{
+    text-align: center;
+}
+.landing-text h1{
+    color: hsl(0, 6%, 24%);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .65rem;
+    line-height: 1;
+    padding-bottom: 1rem;
+}
+.h1-span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+.landing-text p{
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 1rem 0 2rem;
+}
+form{
+    text-align: center;
+}
+input{
+    width: 90%;
+    margin: 0 auto;
+    height: 3rem;
+    position: relative;
+    border-radius: 3rem;
+    border: 1px solid hsl(0, 36%, 70%);
+    background-color: rgb(206, 151, 151, 0.001);
+}
+input::placeholder{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    color: rgb(206, 151, 151, 0.5);
+    transform: translateX(1rem);
+}
+.submit-arrow{
+    position: absolute;
+    transform: translateX(-4.5rem);
+    border-radius: 3rem;
+    width: 4.5rem;
+    height: 3.2rem;
+    border: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+.image-container{
+    background-image: url("../images/hero-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 16rem;
+}
+
+
+@media only screen and (min-width: 1400px){
+    .logo{
+        position: absolute;
+        transform: translateX(12rem);
+        margin-top: 3rem;
+        width: 7rem;
+    }
+    .landing{
+        width: 30%;
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
+    }
+    .landing-text{
+        margin-top: 7rem;
+    }
+    .landing-text h1{
+        font-size: 4rem;
+        text-align: left;
+    }
+    .landing-text p{
+
+        text-align: left;
+    }
+    .main-content{
+        display: flex;
+        text-align: left;
+        flex-direction: row-reverse;
+        
+    }
+    .image-container{
+        background-image: url("../images/hero-desktop.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40%;
+        height:45rem;
+    }
+    .attribution{
+        padding-top: 10rem;
+    }
 }
