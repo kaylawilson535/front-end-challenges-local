@@ -81,10 +81,12 @@ input:focus{
  }
 .button{
     width: 90%;
+    padding: 1rem;
+    border-radius: .5rem;
     border-style: none;
     background-color: hsl(154, 59%, 51%);
     color: white;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 500;
     text-transform: uppercase;
     box-shadow: 0px 5px hsl(154, 59%, 40%);
@@ -112,6 +114,27 @@ form p{
 .attribution a{
     text-decoration: none;
     color: white;
+}
+.form-control.success input {
+    border-color: #2ecc71;
+}
+.form-control.error input {
+    border-color: #e74c3c;
+}
+.error small{
+    display: block;
+    color:  #e74c3c;
+    font-size: .6rem;
+    text-align: right;
+    padding-right: 2rem;
+    font-style: italic;
+}
+.success small{
+    display: none;
+    color:  #2ecc71;
+    font-size: .7rem;
+    text-align: left;
+    padding-left: 2rem;
 }
 
 @media only screen and (min-width: 1400px){

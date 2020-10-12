@@ -35,33 +35,50 @@
       </div>
       <form id="form">
         <span id="error"></span>
-        <input 
-        type="text"
-        name="fname"
-        id="fname"
-        placeholder="First Name"
-        onKeydown="KeyPressed(event);">
+
+
+        <div class="form-control">
+          <input 
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="First Name"
+          >
+          <small>Error message</small>
+        </div>
+        
+        <div class="form-control">
+          <input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="Last Name"
+        >
+          <small>Error message</small>
+        </div>
   
-        <input
-        type="text"
-        name="lname"
-        id="lname"
-        placeholder="Last Name"
-        onKeydown="KeyPressed(event);">
+        
+        <div class = "form-control">
+          <input 
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+         >
+          <small>Error message</small>
+        </div>
+        
   
-        <input 
-        type="text"
-        name="email"
-        id="email"
-        placeholder="Email Address"
-        onKeydown="KeyPressed(event);">
-  
-        <input 
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Password"
-        onKeydown="KeyPressed(event);">
+        <div class = "form-control">
+          <input 
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          >
+          <small>Error message</small>
+        </div>
+        
         
         <button class = "button" type="submit">
           Claim your free trial
